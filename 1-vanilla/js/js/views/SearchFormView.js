@@ -1,7 +1,15 @@
 import View from "./View.js";
+import {qs} from "../helpers.js";
 
-class SearchFormView extends View {
+export default class SearchFormView extends View {
     constructor(element) {
-        super(qs());
+        super(qs("#search-form-view"));
+
+        this.resetElement = qs("[type=reset]", this.element);
+        this.showResetButton(false);
+    }
+
+    showResetButton(visible = true) {
+        this.resetElement.style.display = visible ? "block" : "none";
     }
 }
