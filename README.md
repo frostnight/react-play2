@@ -4,7 +4,11 @@
     별도 프로젝트 복제 하였습니다.
 ###
 
-웹 서버 기동
+
 ###
+웹서버 기동  \
 npx lite-server --baseDir 1-vanilla/
+
+git 주소 \
+https://github.com/jeonghwan-kim/lecture-react
 ###
