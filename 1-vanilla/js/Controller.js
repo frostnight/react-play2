@@ -26,6 +26,8 @@ export default class Controller {
 
   reset() {
     console.log(tag, 'reset');
+    this.store.reset();
+    this.render();
   }
 
   render() {

@@ -8,7 +8,11 @@ export default class Store {
 
     this.storage = storage;
 
-    this.searchKeyword = "";
+    this.reset();
+  }
+
+  reset(){
+    this.searchKeyword = '';
     this.searchResult = [];
   }
 
